@@ -9,6 +9,6 @@ private:
 public:
 	WeightEntry();
 	WeightEntry(int weightOfDate, std::string dateOfWeight);
-	int getWeight() { return weight; };
-	std::string getDate() { return date; };
+	int getWeight() { return weight; }
+	std::string getDate() { return date; }
 };

@@ -19,3 +19,14 @@ string Person::getWeights()
     }
     return output;
 }
+
+void Person::AddReource()
+{
+	pResource.reset();
+	pResource = std::make_shared<Resource>(name);
+}
+
+std::string Person::GetRecourceStr()
+{
+	return pResource->GetReourceStr();
+}

@@ -38,11 +38,13 @@ int main(int argc, char *argv[])
 
 	// SP
 	shared_ptr<Resource> pResource(new Resource("Hello pRes"));
+	// pResource -> points-to
 	cout << "Old value pRes: " << pResource->GetReourceStr() << endl;
 	someMethod(pResource);
 	cout << "New value pRes: " << pResource->GetReourceStr() << endl;
 
 	Resource resource("Hello res");
+	// "Normal" dot notation
 	cout << resource.GetReourceStr() << endl;
 
 	// Press Enter to exit message, so we can se the output
